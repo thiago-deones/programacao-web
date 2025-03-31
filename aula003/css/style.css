@@ -1,6 +1,17 @@
 :root {
-    
+    --cor0: #5E80DB;
+    --cor1: #5ECFDB;
+    --cor2: #5EA7DB;
+    --cor3: #5EDBBE;
+
+
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
@@ -13,8 +24,17 @@ body {
 }
 
 .header {
-    background-color: #647a65;
+    background-color: var(--cor0);
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
+    text-decoration: none;
+    
+}
+
+.header li {
+    list-style: none;
+    border: 1px solid #c0c0c0;
+    float: left;
+    
 }
