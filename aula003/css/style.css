@@ -27,7 +27,7 @@ body {
     background-color: var(--cor0);
     color: white;
     text-align: center;
-    padding: 40px 0;
+    padding: 50px 0;
     text-decoration: none;
     
 }
@@ -38,3 +38,61 @@ body {
     float: left;
     
 }
+
+nav {
+    background-color: var(--cor3);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(32, 29, 29, 0.411);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.foto {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px;
+    background-color: var(--cor0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--cor1);
+}
+

@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="header">
-        <nav>
+        <nav aria-label="Navegação principal">
             <ul>
                 <li><a href="#hero">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
@@ -24,84 +24,83 @@
     </header>
 
 
-    <section id="hero">
-        <h1>Olá, eu sou Thiago deones.</h1>
-        <p>Desenvolvedor Web & Apaixonado por tecnologia</p>
-    </section>
+    <main>
+        <section id="hero">
+            <h1>Olá, eu sou Thiago deones.</h1>
+            <p>Desenvolvedor Web & Apaixonado por tecnologia</p>
+        </section>
+        <section id="about">
+            <h2>Sobre mim</h2>
+            <picture class="foto">
+                <source media="(max-width: 600px)" srcset="img/thiago-deones.jpg" type="image/jpeg">
+                <img src="img/thiago-deones-grande.png" alt="Foto thiago">
+            </picture>
+            <p><strong>Observação: </strong>Optei em diminuir a imagem no GIMP para meu sitte não ficar pesado</p>
+            <p>Eu sou administrador por formação e com experiência como gerente de padarias, onde utilizei metodologias como 5S e PDCA para otimizar processos e melhorar resultados. Atualmente, estou em transição para a área de tecnologia, com foco em desenvolvimento backend e bancos de dados. Tenho interesse especial em Python e Java, além de conhecimentos em lógica de programação e estruturas de dados. Estou sempre em busca de aprendizado e novos desafios para evoluir na área de tecnologia.</p>
+        </section>
+        <section id="servicos">
+            <article>
+                <h3>Programação Java</h3>
+                <p>Conhecimento de implantação de programas em linguagem de programação JAVA.</p>
+            </article>
+            <article>
+                <h3>Auxilio em ux/ul</h3>
+                <p>Auxilio  a colegas da area sobre paleta de cores em sites.</p>
+            </article>
+        </section>
+        <section id="projetos">
+            <article>
+                <h3>Projeto JavaScript calculadora</h3>
+                <img src="img/calculadora.png" alt="projeto calculadora">
+                <p>O projeto calcula qual no nivel do heroi criando um ranque baseando-se no numero de vitorias e o numero de derrota do mesmo. <a href="https://github.com/ByteData96/Calculadora-ranqueHeroi/blob/main/index.js" target="_blank">Acesse a calculadora</a></p>
+            </article>
+            <article>
+                <h3>Projeto para ver se os numeros são validos</h3>
+                <img src="img/projeto-validacao.png" alt="projeto comparação parametros">
+                <p>O seguinte projeto avalia para ver se os parametros entregues seguem um logica de negocio, sendo ela o primeiro parametro ser menor q o segundo e diferentes.</p>
+            </article>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div>
+                <h3>Hard Skills</h3>
+                <ul>
+                    <img src="img/html.png" alt="imagem html" width="30">
+                    <img src="img/css-3.png" alt="item css" height="40">
+                    <li>HTML/CSS</li>
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968282.png" alt="java" width="30">
+                    <li>Java</li>
+                    <img src="img/python.png" alt="imagem python">
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Trabalho em Equipe</li>
+                    <li>Comunicação</li>
+                    <li>Organização</li>
+                    <li>Liderança</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
 
-    <section id="about">
-        <h2>Sobre mim</h2>
-
-        <img src="img/eu.jpg" alt="Foto thiago">
-        <p><strong>Observação: </strong>Optei em diminuir a imagem no GIMP para meu sitte não ficar pesado</p>
-        <p>Eu sou administrador por formação e com experiência como gerente de padarias, onde utilizei metodologias como 5S e PDCA para otimizar processos e melhorar resultados. Atualmente, estou em transição para a área de tecnologia, com foco em desenvolvimento backend e bancos de dados. Tenho interesse especial em Python e Java, além de conhecimentos em lógica de programação e estruturas de dados. Estou sempre em busca de aprendizado e novos desafios para evoluir na área de tecnologia.</p>
-    </section>
-
-    <section id="servicos">
-        <article>
-            <h3>Programação Java</h3>
-            <p>Conhecimento de implantação de programas em linguagem de programação JAVA.</p>
-        </article>
-        <article>
-            <h3>Auxilio em ux/ul</h3>
-            <p>Auxilio  a colegas da area sobre paleta de cores em sites.</p>
-        </article>
-    </section>
-
-    <section id="projetos">
-        <article>
-            <h3>Projeto JavaScript calculadora</h3>
-            <img src="img/Captura de tela 2025-03-29 121823.png" alt="projeto calculadora">
-            <p>O projeto calcula qual no nivel do heroi criando um ranque baseando-se no numero de vitorias e o numero de derrota do mesmo. <a href="https://github.com/ByteData96/Calculadora-ranqueHeroi/blob/main/index.js">Acesse a calculadora</a></p>
-        </article>
-        <article>
-            <h3>Projeto para ver se os numeros são validos</h3>
-            <img src="img/Captura de tela 2025-03-29 122426.png" alt="projeto comparação parametros">
-            <p>O seguinte projeto avalia para ver se os parametros entregues seguem um logica de negocio, sendo ela o primeiro parametro ser menor q o segundo e diferentes.</p>
-        </article>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div>
-            <h3>Hard Skills</h3>
-            <ul>
-                <img src="img/html.png" alt="imagem html" width="30">
-                <img src="img/css-3.png" alt="item css" height="40">
-                <li>HTML/CSS</li>
-                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968282.png" alt="java" width="30">
-                <li>Java</li>
-                <img src="img/python.png" alt="imagem python">
-                <li>Python</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Soft Skills</h3>
-            <ul>
-                <li>Trabalho em Equipe</li>
-                <li>Comunicação</li>
-                <li>Organização</li>
-                <li>Liderança</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contato">
-        <h2>Entre em Contato</h2>
-        <form>
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025, THIAGO DEONES JESUS. Todos os direitos reservados.</p>
 
         <ul>
-            <li><a href="https://github.com/ByteData96">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/thiago-deones-a9b643218/">LinkedIn</a></li>
+            <li><a href="https://github.com/ByteData96" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/thiago-deones-a9b643218/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         </ul>
     </footer>
 </body>
