@@ -96,3 +96,18 @@ form button:hover {
     background-color: var(--cor1);
 }
 
+.repositorio-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.repositorio-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.repositorio-link a:hover {
+    text-decoration: underline;
+}
+
