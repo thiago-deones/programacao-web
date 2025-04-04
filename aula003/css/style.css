@@ -86,10 +86,11 @@ nav {
 .footer a {
     text-decoration: none;
     color: rgb(104, 101, 101);
+    transition: color 0.3s ease;
 }
 
-.footer:hover {
-
+.footer a:hover {
+ color: var(--cor1);
 }
 
 main {
@@ -133,6 +134,10 @@ section {
 #skills ul {
     list-style: none;
     padding-left: 0;
+}
+
+#skills h3 {
+    margin-top: 20px;
 }
 
 form {
