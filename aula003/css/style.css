@@ -75,6 +75,10 @@ nav {
     z-index: 1000;
 }
 
+nav a:hover {
+    color: var(--cor1);
+}
+
 
 .footer {
     background-color: #333;
