@@ -35,8 +35,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(53, 81, 156);
-}
+    background-color: rgb(15, 32, 75);}
 
 header .logo {
     font-size: 1.5rem;
@@ -51,7 +50,7 @@ header nav ul  {
 }
 
 header nav a:hover {
-    color: var(--secondary-color);
+    color: rgb(255, 159, 28);
 }
 
 header nav a {
@@ -84,6 +83,25 @@ ul {
 ul li {
     margin-bottom: 0.5rem;
 }
+
+.investors-images {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.investor {
+    flex: 1;
+    max-width: 45%;  
+}
+
+.investor img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
 
 .call-to-action a {
     display: inline-block;
