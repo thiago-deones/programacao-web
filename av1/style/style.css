@@ -60,6 +60,11 @@ header nav a {
     transition: color 0.3 ease;
 }
 
+.logo {
+  padding-left: 30px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.322);
+}
+
 section, article {
     margin: 2rem 0;
 }
