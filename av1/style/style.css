@@ -108,7 +108,16 @@ ul li {
     box-shadow: 3px 4px 2px rgba(0, 0, 0, 0.411);
 }
 
+#sites-recomendados a{
+    color: black;
+    font-size: bold;
+    text-decoration: none;
+}
 
+#sites-recomendados a:hover {
+    color: red;
+    text-decoration: underline;
+}
 
 .call-to-action a {
     display: inline-block;
