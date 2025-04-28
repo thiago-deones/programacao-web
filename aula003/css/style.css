@@ -255,9 +255,3 @@ form button:hover {
     }
 }
 
-@media (max-width: 500px) {
-    .header a {
-        font-size: 14px;
-    }
-}
-
