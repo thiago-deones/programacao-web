@@ -105,7 +105,9 @@ ul li {
     width: 100%;
     height: auto;
     border-radius: 8px; 
+    box-shadow: 3px 4px 2px rgba(0, 0, 0, 0.411);
 }
+
 
 
 .call-to-action a {
