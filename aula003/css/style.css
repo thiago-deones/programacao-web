@@ -21,6 +21,13 @@ body {
     color: #333;
 }
 
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .header {
     background-color: #333;
     color: white;
@@ -215,11 +222,5 @@ form button:hover {
     margin-top: 20px;
     margin-bottom: 20px;
     display: inline-block;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
 }
 
