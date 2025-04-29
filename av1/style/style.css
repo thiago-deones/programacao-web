@@ -137,6 +137,33 @@ ul li {
     color: #fff;
 }
 
+.livros-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .livro {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .livro a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .livro a:hover {
+    color: blue;
+  }
+  
 footer {
     background-color: var(--secondary-color);
     text-align: center;
