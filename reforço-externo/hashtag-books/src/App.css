@@ -73,6 +73,7 @@
   margin-top: 20dvh;
   object-fit: contain;
   height: 30dvh;
+  border-radius: 15px;
 }
 
 .seletor {
