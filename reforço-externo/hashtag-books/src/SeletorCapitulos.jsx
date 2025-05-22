@@ -1,7 +1,8 @@
 function SeletorCapitulos(props) {
     return (
         <button className='seletor'>
-            Selecionar Capítulo
+            <i className="bi bi-list-task"></i>
+            <p>{`Capítulo ${props.capituloAtual}`}</p>
         </button>
     )
 }
