@@ -1,6 +1,7 @@
 import './App.css';
 import brasCubas from './assets/bras_cubas.jpeg';
 import Capa from './Capa';
+import SeletorCapitulos from './SeletorCapitulos';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
 
   return<>
     <Capa imagemCapa = {informacoesLivro.imagemCapa} textAlternativo = {informacoesLivro.textAlternativo}/>
+    <SeletorCapitulos />
   </>;
 }
 
