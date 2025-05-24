@@ -4,6 +4,7 @@ import './App.css';
 //importar componente filho
 import FunctionalComponent from './components/FunctionalComponent';
 import ClassComponents from './components/ClassComponents';
+import PropsExempla from './components/PropsExempla';
 
 function App() {
 
@@ -11,6 +12,8 @@ function App() {
     <>
       <h1>Hello World React</h1>
       <FunctionalComponent />
+      <ClassComponents />
+      <PropsExempla nome="Lucas" idade={33} />
     </>
   )
 }
