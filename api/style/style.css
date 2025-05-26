@@ -1,0 +1,86 @@
+body {
+  background: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #343a40;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 60px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  font-weight: 700;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#produtoForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+#produtoForm input,
+#produtoForm button {
+  min-width: 200px;
+}
+
+#produtoForm input.form-control {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+}
+
+#produtoForm .btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  transition: all 0.3s ease-in-out;
+}
+
+#produtoForm .btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+table.table {
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+table thead {
+  background-color: #343a40;
+  color: #fff;
+}
+
+table th,
+table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 576px) {
+  #produtoForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #produtoForm input,
+  #produtoForm button {
+    width: 100%;
+  }
+}
