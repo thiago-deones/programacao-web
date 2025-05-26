@@ -1,18 +1,97 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
 #root {
-  max-width: 1280px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-button {
-  width: 32px;
-  height: 32px;
-  
+h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.status {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  margin: 4px;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.square:hover {
+  background-color: #eee;
+}
+
+.reiniciar {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #1157a1;
+  border: none;
+  border-radius: 6px;
+  color: rgb(17, 3, 3);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reiniciar:hover {
+  background: #b11b4d;
+}
+
+.game-info ol {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem;
+}
+
+.game-info button {
+  margin: 4px 0;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background-color: #f0f0f0;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.game-info button:hover {
+  background-color: #e0e0e0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
+  .logo {
     animation: logo-spin infinite 20s linear;
+  }
+
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
