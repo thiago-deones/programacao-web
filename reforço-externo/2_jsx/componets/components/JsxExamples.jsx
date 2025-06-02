@@ -16,6 +16,15 @@ const JsxExamples = () => {
 
   const userIsLoged = true;
 
+  const userRole = 'admin';
+
+  const users = [
+    {id: 1, name: 'João', age: 25 },
+    {id: 2, name: 'Maria', age: 28 },
+    {id: 3,name: 'Pedro', age: 30 }
+  ]
+  
+
   return (
     <div>
         <h2>Conteúdo que o usuário vai ver</h2>
@@ -40,6 +49,19 @@ const JsxExamples = () => {
 
         {/* RENDERIZAÇÂO CONDICIONAL */}
         {userIsLoged ? (<p>Caso: está logado</p>) : (<p>Caso: Não está logado</p>)}
+
+        <p>
+          {userRole === 'admin' && 'Você é um administrador'}
+        </p>
+        <div>
+          <ul>
+            {users.map((user) => (
+              <li>
+                {user.id} - {user.name}
+              </li>
+            ))}
+          </ul>
+        </div>
     </div>
 
   )
