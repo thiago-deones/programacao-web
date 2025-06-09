@@ -1,32 +1,39 @@
-const API_URL = "http://leoproti.com.br:8004/alunos-view";
+const API_URL = "http://leoproti.com.br:8004/alunos";
 
-async function carregarProdutos() {
-
+async function carregarAlunos() {
+  try{
   const resp = await fetch(API_URL);
 
-  const produtos = await resp.json();
+  if (!resp.ok) {
+    throw new Error("Erro ao buscar os alunos: " + resp.status);
+  }
+
+  const alunos = await resp.json();
   const tbody = document.getElementById("produtosBody");
   tbody.innerHTML = "";
-  produtos.forEach((produto) => {
+  alunos.forEach((aluno) => {
     const tr = document.createElement("tr");
 
     tr.innerHTML = `
-      <td>${produto.id}</td>
-      <td>${produto.nome}</td>
-      <td>${produto.preco != null ? produto.preco.toFixed(2) : ""}</td>
-    `;
+      <td>${aluno.id}</td>
+      <td>${aluno.nome}</td>
+      <td>${aluno.turma}</td>
+      <td>${aluno.curso}</td>
+      <td>${aluno.matricula}</td>
+      `;
     tbody.appendChild(tr);
   });
+} catch (err) {
+  alert("Erro ao carregar os alunos: " + err.message);
+  }
 }
 
 document
-  .getElementById("produtoForm")
+  .getElementById("adicionarForm")
   .addEventListener("submit", async function (e) {
     e.preventDefault();
     const nome = document.getElementById("nome").value.trim();
-    const precoStr = document.getElementById("preco").value;
-    const preco = precoStr === "" ? null : parseFloat(precoStr);
-
+    
     if (!nome || preco === null || isNaN(preco)) {
       alert("Preencha com um nome e um nota com valor válido.");
       return;
@@ -46,7 +53,7 @@ document
 
       alert("Pontuação inserido com sucesso!");
       this.reset();
-      carregarProdutos();
+      carregarAlunos();
     } catch (err) {
       alert(
         "Erro ao salvar a pontuação na API: "
@@ -57,4 +64,4 @@ document
 
 // Ao carregar o script, chama a função para exibir os produtos já cadastrados.
 // Isso garante que a tabela esteja sempre atualizada ao abrir a página.
-carregarProdutos();
+carregarAlunos();

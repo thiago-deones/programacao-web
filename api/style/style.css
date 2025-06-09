@@ -20,31 +20,31 @@ h1 {
   color: #2c3e50;
 }
 
-#produtoForm {
+#alunoForm {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
 }
 
-#produtoForm input,
-#produtoForm button {
+#alunoForm input,
+#alunoForm button {
   min-width: 200px;
 }
 
-#produtoForm input.form-control {
+#alunoForm input.form-control {
   border-radius: 5px;
   border: 1px solid #ced4da;
   padding: 10px;
 }
 
-#produtoForm .btn-success {
+#alunoForm .btn-success {
   background-color: #28a745;
   border-color: #28a745;
   transition: all 0.3s ease-in-out;
 }
 
-#produtoForm .btn-success:hover {
+#alunoForm .btn-success:hover {
   background-color: #218838;
   border-color: #1e7e34;
 }
