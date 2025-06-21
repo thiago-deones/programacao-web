@@ -2,7 +2,7 @@ import { Stack } from "expo-router";
 import { PaperProvider, DefaultTheme } from "react-native-paper";
 import { useEffect } from "react";
 import { StatusBar } from "react-native";
-import lightBlueTheme from "../app/theme";
+import lightBlueTheme from "./theme";
 
 export default function RootLayout() {
   useEffect(() => {
@@ -17,7 +17,8 @@ export default function RootLayout() {
           headerStyle: { backgroundColor: "#1976d2" },
           headerTintColor: "#fff",
           headerTitleAlign: "center",
-          contentStyle: { backgroundColor: "#f5fafd" },
+          headerTitleStyle: {fontWeight: "bold"},
+          contentStyle: { backgroundColor: "#f5fafd" },        
         }}
       >
         <Stack.Screen
