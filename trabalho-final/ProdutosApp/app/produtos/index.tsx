@@ -23,8 +23,11 @@ export default function Produtos() {
     carregarProdutos();
   }, []);
 
-  const handleDelete = (id: number) => {
-    Alert.alert("Excluir Produto", "Deseja realmente excluir este produto?", [
+  const handleDelete = (id: number, nome: string) => {
+    Alert.alert(
+      "Excluir Produto",
+    `Deseja realmente excluir o produto "${nome}"?`,
+    [
       { text: "Cancelar", style: "cancel" },
       {
         text: "Excluir",
@@ -47,10 +50,12 @@ export default function Produtos() {
         data={produtos}
         keyExtractor={(item) => item.id?.toString() ?? ""}
         renderItem={({ item }) => (
-          <Card style={{ marginBottom: 12 }}>
+          <Card style={{ marginBottom: 12, backgroundColor:'#fff' }}>
             <Card.Title
               title={item.nome}
               subtitle={`R$ ${item.preco.toFixed(2)}`}
+              titleStyle={{ fontSize: 22, fontWeight: 'bold' }}       
+              subtitleStyle={{ fontSize: 18, color: '#555' }} 
             />
             <Card.Actions>
               <Button
@@ -63,7 +68,7 @@ export default function Produtos() {
               <Button
                 mode="outlined"
                 textColor="#d32f2f"
-                onPress={() => handleDelete(item.id!)}
+                onPress={() => handleDelete(item.id!, item.nome)}
               >
                 Excluir
               </Button>
@@ -71,7 +76,7 @@ export default function Produtos() {
           </Card>
         )}
         ListEmptyComponent={
-          <Text style={{ textAlign: "center", marginTop: 20 }}>
+          <Text style={{ textAlign: "center", marginTop: 50, fontSize: 22 }}>
             Nenhum produto cadastrado.
           </Text>
         }

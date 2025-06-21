@@ -2,24 +2,11 @@ import { Stack } from "expo-router";
 import { PaperProvider, DefaultTheme } from "react-native-paper";
 import { useEffect } from "react";
 import { StatusBar } from "react-native";
-
-// Tema global claro com azul
-const lightBlueTheme = {
-  ...DefaultTheme,
-  colors: {
-    ...DefaultTheme.colors,
-    background: "#f5fafd",
-    surface: "#fff",
-    primary: "#1976d2",
-    text: "#222",
-    onSurface: "#222",
-    onBackground: "#222",
-  },
-};
+import lightBlueTheme from "../app/theme";
 
 export default function RootLayout() {
   useEffect(() => {
-    StatusBar.setBarStyle("light-content");
+    StatusBar.setBarStyle("dark-content");
     StatusBar.setBackgroundColor("#1976d2");
   }, []);
 
