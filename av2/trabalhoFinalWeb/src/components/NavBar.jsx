@@ -7,43 +7,55 @@ export default function NavBar() {
   const location = useLocation();
 
   return (
-    <AppBar position="static" sx={{ bgcolor: "#1976d2", boxShadow: 3 }}>
+    <AppBar
+      position="static"
+      sx={{
+        bgcolor: "#1565c0", // azul mais forte
+        boxShadow: 3,
+      }}
+    >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-        <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-          CRUD de Produtos
+        <Typography
+          variant="h6"
+          sx={{
+            fontWeight: "bold",
+            color: "#fff",
+            fontSize: "1.5rem",
+          }}
+        >
+          Lista de Produtos
         </Typography>
 
         <Stack direction="row" spacing={2}>
           <Button
-            color="inherit"
             component={RouterLink}
             to="/"
             startIcon={<ListAltIcon />}
-            variant={location.pathname === "/" ? "outlined" : "text"}
+            variant={location.pathname === "/" ? "contained" : "outlined"}
             sx={{
-              fontWeight: location.pathname === "/" ? "bold" : "normal",
-              borderColor: "white",
-              color: location.pathname === "/" ? "#fff" : "#e0e0e0",
+              backgroundColor: location.pathname === "/" ? "#1976d2" : "transparent",
+              color: "#fff",
+              fontWeight: "bold",
               "&:hover": {
-                backgroundColor: "rgba(255,255,255,0.1)"
-              }
+                backgroundColor: "#1565c0",
+              },
             }}
           >
             Produtos
           </Button>
+
           <Button
-            color="inherit"
             component={RouterLink}
             to="/novo"
             startIcon={<AddCircleOutlineIcon />}
-            variant={location.pathname === "/novo" ? "outlined" : "text"}
+            variant={location.pathname === "/novo" ? "contained" : "outlined"}
             sx={{
-              fontWeight: location.pathname === "/novo" ? "bold" : "normal",
-              borderColor: "white",
-              color: location.pathname === "/novo" ? "#fff" : "#e0e0e0",
+              backgroundColor: location.pathname === "/novo" ? "#1976d2" : "transparent",
+              color: "#fff",
+              fontWeight: "bold",
               "&:hover": {
-                backgroundColor: "rgba(255,255,255,0.1)"
-              }
+                backgroundColor: "#1565c0",
+              },
             }}
           >
             Novo Produto
