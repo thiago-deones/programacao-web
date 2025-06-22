@@ -81,7 +81,12 @@ export default function ListaAlunos() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 16, backgroundColor: "#f5f6fa" },
+  container: { 
+    flex: 1,
+    padding: 16,
+    backgroundColor: "#f5f6fa",
+    paddingBottom: 80
+},
   title: {
     fontSize: 28,
     fontWeight: "bold",

@@ -108,6 +108,7 @@ const styles = StyleSheet.create({
     marginBottom: 24,
     textAlign: 'center',
     color: '#1976d2',
+    padding: 20,
   },
   input: {
     marginBottom: 16,
