@@ -62,7 +62,8 @@ export default function ListaAlunos() {
   );
 
   return (
-    <View style={styles.container}>
+      <View style={styles.container}>
+        <Text style={styles.title}>Cadastro de alunos</Text>
       <FlatList
         data={alunos}
         keyExtractor={(item) => item.id.toString()}
@@ -81,6 +82,14 @@ export default function ListaAlunos() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 16, backgroundColor: "#f5f6fa" },
+  title: {
+    fontSize: 28,
+    fontWeight: "bold",
+    color: "#1976d2",
+    textAlign: "center",
+    marginBottom: 20,
+    padding: 20,
+  },
   card: { marginBottom: 12 },
   fab: {
     position: "absolute",
